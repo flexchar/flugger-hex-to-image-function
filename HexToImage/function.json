@@ -1,0 +1,18 @@
+{
+    "bindings": [
+        {
+            "authLevel": "anonymous",
+            "type": "httpTrigger",
+            "direction": "in",
+            "name": "req",
+            "methods": ["get"],
+            "route": "hex-to-image/{hex:length(6)}/{width:int}x{height:int}.png"
+        },
+        {
+            "type": "http",
+            "direction": "out",
+            "name": "res"
+        }
+    ],
+    "scriptFile": "../dist/HexToImage/index.js"
+}
