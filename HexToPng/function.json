@@ -6,7 +6,7 @@
             "direction": "in",
             "name": "req",
             "methods": ["get"],
-            "route": "hex-to-image/{hex:length(6)}/{width:int}x{height:int}.png"
+            "route": "hex-to-png/{hex:length(6)}/{width:int}x{height:int}.png"
         },
         {
             "type": "http",
@@ -14,5 +14,5 @@
             "name": "res"
         }
     ],
-    "scriptFile": "../dist/HexToImage/index.js"
+    "scriptFile": "../dist/HexToPng/index.js"
 }

@@ -12,15 +12,15 @@ const httpTrigger: AzureFunction = async function (
     const heightInt = parseInt(height);
 
     // Debug
-    if (false) {
-        context.res = {
-            body: JSON.stringify(req),
-            headers: {
-                'Content-type': 'application/json',
-            },
-        };
-        return;
-    }
+    // if (0) {
+    //     context.res = {
+    //         body: JSON.stringify(req),
+    //         headers: {
+    //             'Content-type': 'application/json',
+    //         },
+    //     };
+    //     return;
+    // }
 
     if (!isHexColor(hex)) {
         context.res = {
@@ -36,7 +36,7 @@ const httpTrigger: AzureFunction = async function (
         return;
     }
 
-    context.log('🏳️‍🌈 HEX Received: ' + hex);
+    // context.log('🏳️‍🌈 HEX Received: ' + hex);
 
     const canvas = createCanvas(widthInt, heightInt);
     const canvaContext = canvas.getContext('2d');
