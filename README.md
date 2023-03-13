@@ -22,7 +22,7 @@ npm install
 3.  Initialize the Azure Function project:
 
 ```bash
-npm func init
+npx func init
 ```
 
 4.  In one terminal, run the TypeScript compiler in watch mode:
@@ -34,7 +34,7 @@ npm run watch
 5.  In another terminal, run the function locally:
 
 ```bash
-npm run serve
+npm start
 ```
 
 The function should now be running locally on your machine. You can use an HTTP trigger to send a request to the function and receive a response with the generated PNG image.
