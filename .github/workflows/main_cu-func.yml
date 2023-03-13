@@ -41,4 +41,4 @@ jobs:
           app-name: 'cu-func'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_67ABDD9F8A61468D9AC8494D803D167C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A050440D7CE84606926C306BB449D10F }}
